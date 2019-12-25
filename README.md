@@ -14,3 +14,11 @@ namespace RememberLogicWithCSharp {
     }
 }
 ```
+
+## How to read keyboard data:
+Use Use **Console.ReadLine()**
+
+```csharp
+Console.Write("Enter your name: ");
+string name = Console.ReadLine();
+```
