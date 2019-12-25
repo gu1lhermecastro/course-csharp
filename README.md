@@ -37,19 +37,15 @@ Use **Console.Write()** that belongs to the namespace **using System;**
 ```csharp
 using System;
 
-namespace RememberLogicWithCSharp {
-    class Program {
-        static void Main(string[] args) {
-            Console.Write("Hello World!");
-        }
-    }
-}
+Console.Write("Hello World!");
 ```
 
 ## How to read keyboard data:
-Use Use **Console.ReadLine()**
+Use **Console.ReadLine()** that belongs to the namespace **using System;**
 
 ```csharp
+using System;
+
 Console.Write("Enter your name: ");
 string name = Console.ReadLine();
 ```
