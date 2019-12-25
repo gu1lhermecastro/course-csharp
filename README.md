@@ -49,3 +49,19 @@ using System;
 Console.Write("Enter your name: ");
 string name = Console.ReadLine();
 ```
+
+## How to read and store data separately by spaces:
+Use **Split(' ')** to choose the separator string.
+```csharp
+Console.Write("Enter your last name, age and heigth (same line): ");
+string[] array = Console.ReadLine().Split(' ');
+
+string lastName = array[0];
+int age = int.Parse(array[1]);
+double heigth = double.Parse(array[2]);
+
+Console.WriteLine(lastName);
+Console.WriteLine(age);
+Console.WriteLine(heigth);
+```
+
