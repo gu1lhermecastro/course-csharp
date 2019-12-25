@@ -32,7 +32,7 @@ Used for
 
 
 ## View message on console:
-Use **Console.Write()** that belongs to the namespace **using System;**
+Use **Console.Write()** that belongs to the namespace **using System;**. User  or **Console.WriteLine()** to display with line break.
 
 ```csharp
 using System;
