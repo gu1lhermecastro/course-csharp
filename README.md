@@ -83,6 +83,10 @@ Operator | Example | Result
  ++ | a++ or ++a | a = a + 1 
  -- | a-- or --a | a = a - 1 
  
+ ## Implicit conversion and casting:
+ 
+ //TODO
+ 
  ## Placeholders, interpolation and link:
  
  ```csharp
