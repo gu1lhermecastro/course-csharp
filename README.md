@@ -75,3 +75,10 @@ Operator | Example | Result
  *= | a *= 5 | 50 
  /= | a /= 5 | 2 
  %= | a %= 5 | 0 
+
+## Arithmetic operators:
+
+Operator | Example | Result
+--------- | --------- | ---------
+ ++ | a++ or ++a | a = a + 1 
+ -- | a-- or --a | a = a - 1
