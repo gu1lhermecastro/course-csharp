@@ -1,4 +1,4 @@
-# course-csharp
+# Language course C# (CSharp)
 
 ## Standard structure of an application:
 ```csharp
