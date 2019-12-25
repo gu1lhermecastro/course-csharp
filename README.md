@@ -81,4 +81,19 @@ Operator | Example | Result
 Operator | Example | Result
 --------- | --------- | ---------
  ++ | a++ or ++a | a = a + 1 
- -- | a-- or --a | a = a - 1
+ -- | a-- or --a | a = a - 1 
+ 
+ ## Placeholders, interpolation and link:
+ 
+ ```csharp
+string name = "Guilherme";
+int age = 21;
+double balance = 1.500;
+
+//Placeholder
+Console.WriteLine("{0} is {1} years old and has balance equal to ${2:F2}", name, age, balance);
+//Interpolation
+Console.WriteLine($"{name} is {age} years old and has balance equal to ${balance:F2}");
+//Link/"Concatenacao" in pt-Br
+Console.WriteLine(name + " is " + age + " years old and has balance equal to $ " + balance);
+```
