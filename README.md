@@ -106,9 +106,9 @@ Operator | Example | Result
 --------- | --------- | ---------
  && | true && true | true 
  && | true && false | false
- // | true || true | true 
- // | true || false | true
- // | false || false | false
+ // | true // true | true 
+ // | true // false | true
+ // | false // false | false
  !| negation 
  
  ## Implicit conversion and casting:
