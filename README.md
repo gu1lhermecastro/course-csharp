@@ -89,6 +89,17 @@ Operator | Example | Result
  ++ | a++ or ++a | a = a + 1 
  -- | a-- or --a | a = a - 1 
  
+ ## Comparative operators:
+
+Operator | Example | Result
+--------- | --------- | ---------
+ ">" | 10 > 15 | false 
+ "<" | 10 < 15 | true 
+ ">=" | 10 >= 15 | false 
+ "<=" | 10 <= 15 | true 
+ "==" | 10 == 15 | false 
+ "!=" | 10 != 15 | true 
+ 
  ## Implicit conversion and casting:
  
  //TODO
