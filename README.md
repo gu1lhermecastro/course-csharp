@@ -160,3 +160,13 @@ if (condition1) {
     //comand 3
 }
 ```
+
+## Functions:
+
+1. Main advantages: modularization, delegation and reuse.
+
+2. Input and output data:
+* Functions may or may not receive input data (parameters or arguments)
+* Functions may or may not return an output
+
+3. In OOP, functions in classes are known as "methods".
