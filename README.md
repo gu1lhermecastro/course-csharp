@@ -170,3 +170,22 @@ if (condition1) {
 * Functions may or may not return an output
 
 3. In OOP, functions in classes are known as "methods".
+
+## Class:
+1. It is a model for an object, an object has:
+* Attributes (data/fields)
+* Methods (functions/operations/methods/actions)
+
+2. They are also characteristics of a class:
+* Builders
+* Overload
+* Encapsulation
+* Inheritance
+* Polymosphism
+
+Examples of use:
+* Entities: Product, Customer and etc.
+* services: ProductService, ClienteService, EmailService, StorageService
+* Controllers: ProductController, ClienteController
+* Utilities: Calculator, Compactor
+* Others (views, repositories, managers and etc.)
