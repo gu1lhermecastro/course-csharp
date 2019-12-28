@@ -100,6 +100,17 @@ Operator | Example | Result
  "==" | 10 == 15 | false 
  "!=" | 10 != 15 | true 
  
+ ## Logical operators:
+
+Operator | Example | Result
+--------- | --------- | ---------
+ && | true && true | true 
+ && | true && false | false
+ // | true || true | true 
+ // | true || false | true
+ // | false || false | false
+ !| negation 
+ 
  ## Implicit conversion and casting:
  
  //TODO
