@@ -129,3 +129,34 @@ Console.WriteLine($"{name} is {age} years old and has balance equal to ${balance
 //Link/"Concatenacao" in pt-Br
 Console.WriteLine(name + " is " + age + " years old and has balance equal to $ " + balance);
 ```
+
+## Conditional structure:
+
+Simple:
+
+```csharp
+if (condition) {
+    //comand
+}
+```
+
+Composite:
+
+```csharp
+if (condition) {
+    //comand 1
+} else {
+    //comand 2
+}
+```
+Interlink:
+
+```csharp
+if (condition1) {
+    //comand 1
+} if (condition2) {
+    //comand 2
+}else {
+    //comand 3
+}
+```
