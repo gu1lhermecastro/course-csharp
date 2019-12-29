@@ -189,3 +189,24 @@ Examples of use:
 * Controllers: ProductController, ClienteController
 * Utilities: Calculator, Compactor
 * Others (views, repositories, managers and etc.)
+
+
+## Using the this:
+
+* It is a reference to the object itself.
+
+* Common uses:
+1. Differentiate attributes from the class of local variables (Java)
+2. Reference another constructor in a constructor
+3. Pass the object prio as an argument in the call of a method or constructor
+
+```csharp
+public Product(string Name) {
+    this.Name = Name;
+}
+
+public Product(string Name, double Price, int Quantity) : this(Name) {
+    this.Price = Price;
+    this.Quantity = Quantity;
+}
+```
