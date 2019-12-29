@@ -190,6 +190,13 @@ Examples of use:
 * Utilities: Calculator, Compactor
 * Others (views, repositories, managers and etc.)
 
+Suggested orgem for organizing a class
+
+* Private attributes
+* Self-implemented properties
+* Constructors
+* Custom properties
+* Other class methods
 
 ## Using the this:
 
