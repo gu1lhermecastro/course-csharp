@@ -246,3 +246,21 @@ public string Name {
     }
 }
 ```
+
+## Auto properties:
+//Coming soon
+
+```csharp
+private string _name;
+public double Price { get; private set; }
+public int Quantity { get; set; }
+
+public string Name {
+    get { return _name; }
+    set {
+        if (value != null && value.Length > 1) {
+            _name = value;
+        }
+    }
+}
+```
