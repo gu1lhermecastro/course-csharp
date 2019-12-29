@@ -210,3 +210,22 @@ public Product(string Name, double Price, int Quantity) : this(Name) {
     this.Quantity = Quantity;
 }
 ```
+
+## Encapsulation:
+//Coming soon
+
+```csharp
+private string _name;
+private double _price;
+private int _quantity;
+
+public string GetName() {
+    return this._name;
+}
+
+public void SetName(string name) {
+    if (name != null && name.Length > 1) {
+        this._name = name;
+    }
+}
+```
