@@ -229,3 +229,20 @@ public void SetName(string name) {
     }
 }
 ```
+## Properties:
+//Coming soon
+
+```csharp
+private string _name;
+private double _price;
+private int _quantity;
+
+public string Name {
+    get { return _name; }
+    set {
+        if (value != null && value.Length > 1) {
+            _name = value;
+        }
+    }
+}
+```
