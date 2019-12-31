@@ -271,3 +271,14 @@ public string Name {
     }
 }
 ```
+
+## Access modifiers
+
+ empty | própria classe | classes do assembly | subclasses no assembly | classes fora do assembly | subclasses fora do assembly
+--------- | --------- | --------- | --------- | --------- | ---------
+ public | x | x | x | x | x |
+ internal | x | x | x |  | x |
+ protected internal | x | x | x |  |  |
+ protected | x |  | x |  | x |
+ private protected | x |  | x |  |  |
+ private | x |  |  |  |  |
