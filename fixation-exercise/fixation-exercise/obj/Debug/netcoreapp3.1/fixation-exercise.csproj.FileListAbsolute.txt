@@ -1,0 +1,11 @@
+C:\Users\Guilherme Castro\workspace\ws-csharp\fixation-exercise\fixation-exercise\bin\Debug\netcoreapp3.1\fixation-exercise.exe
+C:\Users\Guilherme Castro\workspace\ws-csharp\fixation-exercise\fixation-exercise\bin\Debug\netcoreapp3.1\fixation-exercise.deps.json
+C:\Users\Guilherme Castro\workspace\ws-csharp\fixation-exercise\fixation-exercise\bin\Debug\netcoreapp3.1\fixation-exercise.runtimeconfig.json
+C:\Users\Guilherme Castro\workspace\ws-csharp\fixation-exercise\fixation-exercise\bin\Debug\netcoreapp3.1\fixation-exercise.runtimeconfig.dev.json
+C:\Users\Guilherme Castro\workspace\ws-csharp\fixation-exercise\fixation-exercise\bin\Debug\netcoreapp3.1\fixation-exercise.dll
+C:\Users\Guilherme Castro\workspace\ws-csharp\fixation-exercise\fixation-exercise\bin\Debug\netcoreapp3.1\fixation-exercise.pdb
+C:\Users\Guilherme Castro\workspace\ws-csharp\fixation-exercise\fixation-exercise\obj\Debug\netcoreapp3.1\fixation-exercise.csprojAssemblyReference.cache
+C:\Users\Guilherme Castro\workspace\ws-csharp\fixation-exercise\fixation-exercise\obj\Debug\netcoreapp3.1\fixation-exercise.AssemblyInfoInputs.cache
+C:\Users\Guilherme Castro\workspace\ws-csharp\fixation-exercise\fixation-exercise\obj\Debug\netcoreapp3.1\fixation-exercise.AssemblyInfo.cs
+C:\Users\Guilherme Castro\workspace\ws-csharp\fixation-exercise\fixation-exercise\obj\Debug\netcoreapp3.1\fixation-exercise.dll
+C:\Users\Guilherme Castro\workspace\ws-csharp\fixation-exercise\fixation-exercise\obj\Debug\netcoreapp3.1\fixation-exercise.pdb
