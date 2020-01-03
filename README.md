@@ -334,3 +334,11 @@ if (y.HasValue)
 else
 	Console.WriteLine("Y is null");
 ```
+
+### Coalescence operator:
+
+* If the value is null, IT RECEIVES THE VALUE FROM THE RIGHT.
+```csharp
+double? x = null;
+double y = x ?? 10;
+```
