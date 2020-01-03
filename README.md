@@ -342,3 +342,47 @@ else
 double? x = null;
 double y = x ?? 10;
 ```
+## Parameter modifier: params
+
+* Suppose you want a calculator to calculate the sum of an amount variable of values. Bad solution would be using overload:
+
+```csharp
+public static int Sum(int n1, int n2) {
+	return n1 + n2;
+}
+public static int Sum(int n1, int n2, int n3) {
+	return n1 + n2 + n3;
+}
+public static int Sum(int n1, int n2, int n3, int n4) {
+	return n1 + n2 + n3 + n4;
+}
+```
+
+* Vector solution:
+```csharp
+public static int Sum(int[] numbers) {
+	int sum = 0;
+	for (int i=0; i<numbers.Length; i++) {
+		sum += numbers[i];
+	}
+	return sum;
+}
+```
+```csharp
+int result = Calculator.Sum(new int[] { 10, 20, 30, 40 });
+```
+
+* Solution with modifier params:
+
+```csharp
+public static int Sum(params int[] numbers) {
+	int sum = 0;
+	for (int i=0; i<numbers.Length; i++) {
+		sum += numbers[i];
+	}
+	return sum;
+}
+```
+```csharp
+int result = Calculator.Sum(10, 20, 30, 40);
+```
