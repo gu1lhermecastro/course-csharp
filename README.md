@@ -302,3 +302,35 @@ public string Name {
 * Garbage collector monitors objects dynamically allocated by the program (in heap), delocating those that are no longer being used.
 * Dynamically allocated objects, when they no longer have reference to them, will be deallocated by garbage collector.
 * Local variables are deallocated immediately as soon as their local scope exits execution.
+
+## Nullable:
+
+* It is a C# feature so that value-type data (structs) can receive the null value.
+* Common use:
+    * Database fields that can valr null (date of birth, some numeric value, etc.).
+    * Optional data and parameters.
+* Methods:
+	* GetValueOrDefault: Takes the value of the variable, but if there is no value, it takes the default value of its type.
+	* HasValue : Returns a bolean checking whether or not there is value.
+	* Value : Returns the value, but if there is no throws an exception.
+
+```csharp
+// The question mark (?) tells the compiler that the variable CAN BE NULL.
+double? x = null;
+double? y = 10.0;
+
+Console.WriteLine(x.GetValueOrDefault()); // 0
+Console.WriteLine(y.GetValueOrDefault()); // 10
+
+Console.WriteLine(x.HasValue); // False
+Console.WriteLine(y.HasValue); // True
+
+if (x.HasValue) // If not was verification - Unhandled Expection: Nullable object must have a value.
+	Console.WriteLine(x.Value);
+else
+	Console.WriteLine("X is null");
+if (y.HasValue)
+	Console.WriteLine(y.Value);
+else
+	Console.WriteLine("Y is null");
+```
