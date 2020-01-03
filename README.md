@@ -282,3 +282,16 @@ public string Name {
  protected | x |  | x |  | x |
  private protected | x |  | x |  |  |
  private | x |  |  |  |  |
+
+## Reference types vs value types:
+
+ Class | Struct
+ --------- | --------- 
+ Advantage: Enjoy all OO features | Advantage: it's simple and more performative 
+ Objects need to be instantiated using new, or point to an existing object. | You don't have to instantiate using new, but it's possible to 
+ Accepts null value | Does not accept null value 
+ Heritage Support | It does not support inheritance(but can implement interfaces) 
+ Y = X; "Y goes on to point to where X is pointing at that moment" | Y = X; "Y receives a copy of X" 
+ Instantiated objects in heap | Instantiated objects in the stack 
+ Unused objects are delocated at a time near garbage collector | "Objects" are deallocated immediately when their execution scope is finalized 
+ Variables are pointers | Variables are boxes
