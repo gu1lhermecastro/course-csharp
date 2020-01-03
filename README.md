@@ -295,3 +295,10 @@ public string Name {
  Instantiated objects in heap | Instantiated objects in the stack 
  Unused objects are delocated at a time near garbage collector | "Objects" are deallocated immediately when their execution scope is finalized 
  Variables are pointers | Variables are boxes
+
+## Garbage collector:
+
+* It is a process that automates the memory management of a running program.
+* Garbage collector monitors objects dynamically allocated by the program (in heap), delocating those that are no longer being used.
+* Dynamically allocated objects, when they no longer have reference to them, will be deallocated by garbage collector.
+* Local variables are deallocated immediately as soon as their local scope exits execution.
