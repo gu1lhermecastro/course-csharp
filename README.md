@@ -386,3 +386,46 @@ public static int Sum(params int[] numbers) {
 ```csharp
 int result = Calculator.Sum(10, 20, 30, 40);
 ```
+## Handling exceptions with Try-Catch scopes:
+
+## Scope try:
+
+* Contains code that represents the normal execution of the code trech that can incur an exception.
+
+## Scope catch:
+
+* Contains the code to run if an exception occurs.
+* The type of exception to be handled must be specified (upcasting is allowed)
+
+## Scope finally:
+
+* It is a scope that contains the code to run regardless of whether or not an exception occurred.
+
+	* Examples of use: close a file or connection to the database at the end of processing.
+
+Demo:
+```csharp
+try
+{
+	Console.Write("Enter first value: ");
+        int value1 = int.Parse(Console.ReadLine());
+
+	Console.Write("Enter second value: ");
+        int value2 = int.Parse(Console.ReadLine());
+
+	double result = value1 / value2;
+        Console.WriteLine(result);
+}
+catch(DivideByZeroException e)
+{
+	Console.WriteLine(e.Message);
+}
+catch(FormatException e)
+{
+	Console.WriteLine(e.Message);
+}
+finally
+{
+	Console.WriteLine("Execution regardless of exception posting or not.");
+}
+```
