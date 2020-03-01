@@ -1,13 +1,29 @@
 # Language course C# (CSharp)
+- [Language conventions](#conventions)
+- [Standard structure of an application](#standard-structure)
+- [View message on console](#view-message-console)
+- [Read keyboard data](#read-keyboard)
 - [Functions](#functions)
+- [Assignment Operators](#assignment-operators)
+- [Nullable](#nullable)
+- [Garbage collector](#garbage-collector)
+- [Reference types vs value types](#reference-value)
+- [Arithmetic operators](#arithmetic-operators)
+- [Comparative operators](#comparative-operators)
+- [Logical operators](#logical-operators)
+- [Conditional structure](#conditional-structure)
+- [Placeholders, interpolation and link](#placeholders-interpolation-link)
+- [Implicit conversion and casting](#implicit-conversion-casting)
+- [How to use Spli](#split)
 
-## Conventions:
+## <a name="conventions">Conventions:<a/>
 
 1. **Camel Case:** lastName (method parameters, variables within methods)
 2. **Pascal Case:** LastNamer (namespace, class, properties and methods)
 3. **Standard:** _lastName ("internal" attributes of the class)
 
-## Standard structure of an application:
+## <a name="standard-structure">Standard structure of an application:<a/>
+
 ```csharp
 using System;
 
@@ -37,8 +53,8 @@ static void Main(string[] args) {}
 ```
 Used for
 
+## <a name="view-message-console">View message on console:<a/>
 
-## View message on console:
 Use **Console.Write()** that belongs to the namespace **using System;**. User  or **Console.WriteLine()** to display with line break.
 
 ```csharp
@@ -46,8 +62,8 @@ using System;
 
 Console.Write("Hello World!");
 ```
+## <a name="read-keyboard">How to read keyboard data:<a/>
 
-## How to read keyboard data:
 Use **Console.ReadLine()** that belongs to the namespace **using System;**
 
 ```csharp
@@ -57,7 +73,8 @@ Console.Write("Enter your name: ");
 string name = Console.ReadLine();
 ```
 
-## How to read and store data separately by spaces:
+## <a name="split">How to read and store data separately by spaces:<a/>
+
 Use **Split(' ')** to choose the separator string.
 ```csharp
 Console.Write("Enter your last name, age and heigth (same line): ");
@@ -71,8 +88,7 @@ Console.WriteLine(lastName);
 Console.WriteLine(age);
 Console.WriteLine(heigth);
 ```
-
-## Assignment operators:
+## <a name="assignment-operators">Assignment operators:<a/>
 
 Operator | Example | Result
 --------- | --------- | ---------
@@ -83,14 +99,14 @@ Operator | Example | Result
  /= | a /= 5 | 2 
  %= | a %= 5 | 0 
 
-## Arithmetic operators:
+## <a name="arithmetic-operators">Arithmetic operators:<a/>
 
 Operator | Example | Result
 --------- | --------- | ---------
  ++ | a++ or ++a | a = a + 1 
  -- | a-- or --a | a = a - 1 
  
- ## Comparative operators:
+## <a name="comparative-operators">Comparative operators:<a/>
 
 Operator | Example | Result
 --------- | --------- | ---------
@@ -101,7 +117,7 @@ Operator | Example | Result
  "==" | 10 == 15 | false 
  "!=" | 10 != 15 | true 
  
- ## Logical operators:
+ ## <a name="logical-operators">Logical operators:<a/>
 
 Operator | Example | Result
 --------- | --------- | ---------
@@ -112,12 +128,12 @@ Operator | Example | Result
  // | false // false | false
  !| negation 
  
- ## Implicit conversion and casting:
- 
+ ## <a name="implicit-conversion-casting">Implicit conversion and casting:<a/>
+
  //TODO
- 
- ## Placeholders, interpolation and link:
- 
+
+ ## <a name="placeholders-interpolation-link">Placeholders, interpolation and link:<a/>
+
  ```csharp
 string name = "Guilherme";
 int age = 21;
@@ -131,7 +147,7 @@ Console.WriteLine($"{name} is {age} years old and has balance equal to ${balance
 Console.WriteLine(name + " is " + age + " years old and has balance equal to $ " + balance);
 ```
 
-## Conditional structure:
+## <a name="conditional-structure">Conditional structure:<a/>
 
 Simple:
 
@@ -284,7 +300,7 @@ public string Name {
  private protected | x |  | x |  |  |
  private | x |  |  |  |  |
 
-## Reference types vs value types:
+## <a name="reference-value">Reference types vs value types:<a/>
 
  Class | Struct
  --------- | --------- 
@@ -297,14 +313,14 @@ public string Name {
  Unused objects are delocated at a time near garbage collector | "Objects" are deallocated immediately when their execution scope is finalized 
  Variables are pointers | Variables are boxes
 
-## Garbage collector:
+## <a name="garbage-collector">Garbage collector:<a/>
 
 * It is a process that automates the memory management of a running program.
 * Garbage collector monitors objects dynamically allocated by the program (in heap), delocating those that are no longer being used.
 * Dynamically allocated objects, when they no longer have reference to them, will be deallocated by garbage collector.
 * Local variables are deallocated immediately as soon as their local scope exits execution.
 
-## Nullable:
+## <a name="nullable">Nullable:<a/>
 
 * It is a C# feature so that value-type data (structs) can receive the null value.
 * Common use:
