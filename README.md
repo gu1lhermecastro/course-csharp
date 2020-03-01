@@ -1,4 +1,5 @@
 # Language course C# (CSharp)
+- [Functions](#functions)
 
 ## Conventions:
 
@@ -161,7 +162,7 @@ if (condition1) {
 }
 ```
 
-## Functions:
+## <a name="functions">Functions:<a/>
 
 1. Main advantages: modularization, delegation and reuse.
 
