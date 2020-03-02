@@ -15,6 +15,7 @@
 - [Placeholders, interpolation and link](#placeholders-interpolation-link)
 - [Implicit conversion and casting](#implicit-conversion-casting)
 - [How to use Spli](#split)
+- [Extension Method](#extension-method)
 
 ## <a name="conventions">Conventions:<a/>
 
@@ -445,4 +446,32 @@ finally
 {
 	Console.WriteLine("Execution regardless of exception posting or not.");
 }
+```
+
+## <a name="extension-method">Extension Method:<a/>
+- They are methods that allow the functionality of a type, without
+need to change the source code of this type, nor inherit from that type
+- How to make an extension method?
+1. Create a static class
+2. In the class, create a static method
+3. The first parameter of the method allowed to prefix this, followed by the
+declaration of a parameter of the type you want to extend. This will be a
+reference to the object itself.
+
+```csharp
+static class DateTimeExtensions
+	{
+		public static string ElapsedTime(this DateTime thisObj)
+		{
+			TimeSpan duration = DateTime.Now.Subtract(thisObj);
+			if (duration.TotalHours < 24.0)
+			{
+				return duration.TotalHours.ToString("F1", CultureInfo.InvariantCulture) + " hours";
+			}
+			else
+			{
+				return duration.TotalDays.ToString("F1", CultureInfo.InvariantCulture) + " days";
+			}
+		}
+	}
 ```
