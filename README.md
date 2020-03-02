@@ -460,18 +460,23 @@ reference to the object itself.
 
 ```csharp
 static class DateTimeExtensions
+{
+	public static string ElapsedTime(this DateTime thisObj)
 	{
-		public static string ElapsedTime(this DateTime thisObj)
+		TimeSpan duration = DateTime.Now.Subtract(thisObj);
+		if (duration.TotalHours < 24.0)
 		{
-			TimeSpan duration = DateTime.Now.Subtract(thisObj);
-			if (duration.TotalHours < 24.0)
-			{
-				return duration.TotalHours.ToString("F1", CultureInfo.InvariantCulture) + " hours";
-			}
-			else
-			{
-				return duration.TotalDays.ToString("F1", CultureInfo.InvariantCulture) + " days";
-			}
+			return duration.TotalHours.ToString("F1", CultureInfo.InvariantCulture) + " hours";
+		}
+		else
+		{
+			return duration.TotalDays.ToString("F1", CultureInfo.InvariantCulture) + " days";
 		}
 	}
+}
+```
+Accessing the extension method:
+```csharp
+DateTime dt = new DateTime(2020, 03, 1, 8, 10, 45);
+Console.WriteLine(dt.ElapsedTime());
 ```
