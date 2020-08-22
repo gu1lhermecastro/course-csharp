@@ -5,7 +5,7 @@
 - [Read keyboard data](#read-keyboard)
 - [Functions](#functions) 
 - [Assignment Operators](#assignment-operators)
-- [Nullable](#nullable)
+- [Nullable](#nullable) 
 - [Garbage collector](#garbage-collector)
 - [Reference types vs value types](#reference-value)
 - [Arithmetic operators](#arithmetic-operators)
