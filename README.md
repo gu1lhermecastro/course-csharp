@@ -3,7 +3,7 @@
 - [Standard structure of an application](#standard-structure)
 - [View message on console](#view-message-console)
 - [Read keyboard data](#read-keyboard)
-- [Functions](#functions)
+- [Functions](#functions) 
 - [Assignment Operators](#assignment-operators)
 - [Nullable](#nullable)
 - [Garbage collector](#garbage-collector)
