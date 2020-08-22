@@ -18,7 +18,7 @@
 - [Extension Method](#extension-method)
 
 ## <a name="conventions">Conventions:<a/>
-
+ 
 1. **Camel Case:** lastName (method parameters, variables within methods)
 2. **Pascal Case:** LastNamer (namespace, class, properties and methods)
 3. **Standard:** _lastName ("internal" attributes of the class)
