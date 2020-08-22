@@ -1,7 +1,7 @@
 # Language course C# (CSharp)
 - [Language conventions](#conventions)
 - [Standard structure of an application](#standard-structure)
-- [View message on console](#view-message-console)
+- [View message on console](#view-message-console) 
 - [Read keyboard data](#read-keyboard)
 - [Functions](#functions)  
 - [Assignment Operators](#assignment-operators)
