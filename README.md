@@ -16,6 +16,7 @@
 - [Implicit conversion and casting](#implicit-conversion-casting)
 - [How to use Spli](#split)
 - [Extension Method](#extension-method)
+- [Indexes and ranges](#indexes-and-ranges) C# 8
 
 ## <a name="conventions">Conventions:<a/>
  
@@ -486,9 +487,9 @@ Console.WriteLine(dt.ElapsedTime());
 	
 ```csharp
 
-	var test1 = "0123456789";
-	
-	Console.WriteLine(test1[0]); 	// Acessa APENAS o valor contido na posição ZERO.
-	Console.WriteLine(test1[1..]); 	// Acessa o valor a partidar da posição DOIS ATÉ O FINAL.
-	Console.WriteLine(test1[^2..]); // Acessa os DOIS ÚLTIMOS valores.
+var test1 = "0123456789";
+
+Console.WriteLine(test1[0]); 	// Acessa APENAS o valor contido na posição ZERO.
+Console.WriteLine(test1[1..]); 	// Acessa o valor a partidar da posição DOIS ATÉ O FINAL.
+Console.WriteLine(test1[^2..]); // Acessa os DOIS ÚLTIMOS valores.
 ```
