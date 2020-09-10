@@ -480,3 +480,15 @@ Accessing the extension method:
 DateTime dt = new DateTime(2020, 03, 1, 8, 10, 45);
 Console.WriteLine(dt.ElapsedTime());
 ```
+
+
+## <a name="indexes-and-ranges">Indexes and ranges:<a/>
+	
+```csharp
+
+	var test1 = "0123456789";
+	
+	Console.WriteLine(test1[0]); 	// Acessa APENAS o valor contido na posição ZERO.
+	Console.WriteLine(test1[1..]); 	// Acessa o valor a partidar da posição DOIS ATÉ O FINAL.
+	Console.WriteLine(test1[^2..]); // Acessa os DOIS ÚLTIMOS valores.
+```
