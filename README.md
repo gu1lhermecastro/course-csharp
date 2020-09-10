@@ -490,6 +490,6 @@ Console.WriteLine(dt.ElapsedTime());
 var test1 = "0123456789";
 
 Console.WriteLine(test1[0]); 	// Acessa APENAS o valor contido na posição ZERO.
-Console.WriteLine(test1[1..]); 	// Acessa o valor a partidar da posição DOIS ATÉ O FINAL.
+Console.WriteLine(test1[1..]); 	// Acessa o valor apartir da posição DOIS ATÉ O FINAL.
 Console.WriteLine(test1[^2..]); // Acessa os DOIS ÚLTIMOS valores.
 ```
