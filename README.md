@@ -489,7 +489,8 @@ Console.WriteLine(dt.ElapsedTime());
 
 var test1 = "0123456789";
 
-Console.WriteLine(test1[0]); 	// Acessa APENAS o valor contido na posição ZERO.
-Console.WriteLine(test1[1..]); 	// Acessa o valor apartir da posição DOIS ATÉ O FINAL.
-Console.WriteLine(test1[^2..]); // Acessa os DOIS ÚLTIMOS valores.
+Console.WriteLine(test1[0]); 	// Retorna 0 - Acessa APENAS o valor contido na posição ZERO.
+Console.WriteLine(test1[1..]); 	// Retorna 123456789 - Acessa o valor apartir da posição DOIS ATÉ O FINAL.
+Console.WriteLine(test1[^2..]); // Retorna 89 - Acessa os DOIS ÚLTIMOS valores.
+Console.WriteLine(test1[^1]);   // Retorna 9 - Acessa exatamente a última posição.
 ```
